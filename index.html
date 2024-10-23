@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body class="w3-container w3-light-grey">
+    <h1 class="w3-center w3-text-dark-grey">User Information Form</h1>
+
+    <form id="userForm" class="w3-card-4 w3-padding w3-white">
+        <!-- Collect user input -->
+        <div class="w3-margin-bottom">
+            <label for="first_name" class="w3-text-dark-grey">First Name:</label>
+            <input type="text" id="first_name" name="first_name" class="w3-input w3-border" required>
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="last_name" class="w3-text-dark-grey">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" class="w3-input w3-border" required>
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="email_address" class="w3-text-dark-grey">Email Address:</label>
+            <input type="email" id="email_address" name="email_address" class="w3-input w3-border" required>
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="department" class="w3-text-dark-grey">Department:</label>
+            <select id="department" name="department" class="w3-select w3-border" required>
+                <option value="">Select a Department</option>
+                <option value="HR">Human Resources</option>
+                <option value="IT">Information Technology</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="title" class="w3-text-dark-grey">Title:</label><br>
+            <input type="radio" id="mr" name="title" value="Mr."> Mr.
+            <input type="radio" id="ms" name="title" value="Ms."> Ms.
+            <input type="radio" id="mrs" name="title" value="Mrs."> Mrs.
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="website" class="w3-text-dark-grey">Website (optional):</label>
+            <input type="url" id="website" name="website" class="w3-input w3-border">
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="phone_number" class="w3-text-dark-grey">Phone Number (optional):</label>
+            <input type="tel" id="phone_number" name="phone_number" class="w3-input w3-border">
+        </div>
+
+        <div class="w3-margin-bottom">
+            <label for="dr_title" class="w3-text-dark-grey">Dr.:</label>
+            <input type="checkbox" id="dr_title" name="dr_title" class="w3-check">
+        </div>
+
+        <button type="submit" class="w3-button w3-green">Submit</button>
+    </form>
+
+    <!-- Div to display result -->
+    <div id="result" class="w3-panel w3-pale-green w3-margin-top w3-padding"></div>
+
+    <script>
+        const form = document.getElementById('userForm');
+
+        form.addEventListener('submit', function(event) {
+            // Prevent form from reloading the page
+            event.preventDefault();
+
+            // Collect input values
+            const firstName = document.getElementById('first_name').value;
+            const lastName = document.getElementById('last_name').value;
+            const email = document.getElement
+
+        };
